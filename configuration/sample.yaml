@@ -2,26 +2,5 @@
   hosts: ec2-user
   become: yes
   tasks:
-  - name: Install EPEL Repository
-    become: yes
-    yum:
-      name: epel-release
-      state: present
-
-  - name: Update package cache
-    become: yes
-    yum:
-      name: '*'
-      state: latest
-
-
-  - name: Install Nginx
-    package:
-      name: nginx
-      state: present
-
-  - name: Start Nginx service
-    service:
-      name: nginx
-      state: started
-      enabled: yes
+  - name : ping the node 
+    ping: 

@@ -1,7 +1,0 @@
-- name: isntalling roboshop
-  hosts: mongodb
-  become: yes
-  tasks: 
-  - name: print the variable according to environment
-    ansible.builtin.debug:
-      msg: "hello {{NAME}}"

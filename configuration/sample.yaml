@@ -1,5 +1,12 @@
 - name: DEMO is on ansible configuration
   hosts: ec2-user
   tasks:
-  - name: print a message
-    ansible.builtin.shell: echo Hello From Ansible Server
+  - name: install nginx  
+    ansible.builtin.yum:
+      name: nginx
+      state: installed
+  
+  - name: service starting
+    ansible.builtin.service:
+      name: nginx
+      state: started

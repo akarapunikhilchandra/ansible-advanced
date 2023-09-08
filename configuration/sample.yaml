@@ -1,5 +1,6 @@
 - name: DEMO is on ansible configuration
   hosts: ec2-user
+  become: yes
   tasks:
   - name: Update package cache
     package:

@@ -1,0 +1,7 @@
+- name: test project
+  hosts: mongodb
+  become: yes
+  tasks:
+  - name: print the variables
+    ansible.builin.debug:
+      msg: "hello {{NAME}}"

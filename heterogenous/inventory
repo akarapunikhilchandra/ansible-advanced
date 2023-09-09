@@ -1,2 +1,1 @@
-172.31.41.239 ansible_user=ubuntu
-172.31.38.7 ansible_user=ec2-user
+172.31.44.36 ansible_user=centos
